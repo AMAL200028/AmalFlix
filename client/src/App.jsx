@@ -6,6 +6,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./components/layout/MainLayout";
 import routes from "./routes/routes";
+import AdminDashboard from './pages/AdminDashboard';
 import PageWrapper from "./components/common/PageWrapper";
 
 import "react-toastify/dist/ReactToastify.css";
@@ -55,6 +56,7 @@ const App = () => {
                 />
               )
             ))}
+            <Route path="/admin" element={<AdminDashboard />} />
           </Route>
         </Routes>
       </BrowserRouter>
